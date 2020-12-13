@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTMLドキュメントのテンプレート</title>
+  </head>
+  <body>
+    <script>
+        let hp =10;
+
+        while(true){
+            const command = prompt('敵が現れた！（【1】攻撃【2】逃げる）');
+            const random = Math.floor(Math.random() * 10);
+        
+         if(command === '1'){
+          hp = hp - random;
+            console.log(random + 'の攻撃！');
+
+            if(hp <= 0){
+                console.log('敵を倒した！');
+                break;
+                }
+         console.log('敵の体力は残り'+ hp + 'です');
+
+         }else if(command === '2'){
+            console.log('無事に逃げました');
+            break;
+         }
+        }
+        console.log('ゲーム終了');
+
+    </script>
+  </body>
+</html>
