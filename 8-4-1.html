@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal {
+            constructor(name , age){
+                this.name = name;
+                this.ago = age;
+            }
+        }
+
+        class Cat extends Animal {
+            constructor(name,age,type){
+                super(name,age);
+                this.type = type;
+            }
+        }
+
+        const cat = new Cat('猫','1','シャム');
+        console.log(cat);
+
+    </script>
+    
+</body>
+</html>
